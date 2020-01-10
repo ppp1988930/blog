@@ -24,9 +24,10 @@ SECRET_KEY = '(!p^f@uy*xi&&pm9-kcr#n9h3ns1d#a2@fagdc+-*rz4)3^($2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if 'DYNO' in os.environ:    # Running on Heroku
-    DEBUG = False
 DEBUG = True
+if 'DYNO' in os.environ:  # Running on Heroku
+    DEBUG = False
+    
 
 ALLOWED_HOSTS = ['*']
 
